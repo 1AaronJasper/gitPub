@@ -14,11 +14,18 @@
 
 </style>
 <body>
-    <h1>At food bar</h1>
-    <h2><%= drink.name %></h2>
-    <img src="<%= drink.image%>.png" alt="<%= drink.name %>">
-    <h3>Price: <%= drink.price %></h3>
-    <a href="/drinks">Back</a>
+    <h1> Welcome to gitPub</h1>
+    <h3>Food</h3>
+    <ul>
+        <% foods.forEach((food, x) => { %>
+          <li>
+            <a href="/foods/<%- x %>"><%= food.name %></a>
+          </li>
+       <% }) %>
+  </ul>
+
+
+
 
 </body>
 </html>
